@@ -20,11 +20,12 @@ function App() {
     
 
 <div className="container">
-        <div className="row">
-                <div className="col-7">
+        
+          <div className="col-12">
+          <div className="row">
+          <div className="col-7">
                 <Characters/>
                 </div>
-                
                 <div className="col-5">
                   <div className="row">
                     <div className="col">
@@ -33,12 +34,13 @@ function App() {
                 <div className="row">
                 <div className="col">
                 <Provider store={store}>
-    <div className="App">
-      <Sidebar />
-      <Favourites />
-    </div>
-    </Provider>
+                <div className="App">
+                  <Sidebar />
+                  <Favourites />
+                </div>
+                </Provider>
                   </div>
+                </div>
                 </div>
                 </div>
                 
