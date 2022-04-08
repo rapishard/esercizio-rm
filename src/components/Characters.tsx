@@ -71,9 +71,10 @@ function Characters() {
                   characters && characters.map((character)=>< CardImg   key={character.id} character= {character} addOnClick={addToFavorites} deleteOnClick={deleteItem}/>) 
                 }</div>
                 
-              </div></div>
+              </div>
+              </div>
                 <div className="col-5">{
-                  <h3 className='center'>Favorites</h3>
+                  <h3 className='center'>Favourites</h3>
                 }
                 <div className="col"></div>
               <div className='loadflex'>
@@ -81,8 +82,7 @@ function Characters() {
                   favorites && favorites.map((favorite, index)=>< CardImg   key={index} character= {favorite} addOnClick={addToFavorites} deleteOnClick={deleteItem} />) 
                 }</div>
               </div>
-              
-              
+            
               </div>
             </div>
         }

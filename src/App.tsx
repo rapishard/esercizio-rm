@@ -23,10 +23,10 @@ function App() {
         
           <div className="col-12">
           <div className="row">
-          <div className="col-7">
+          <div className="col-5">
                 <Characters/>
                 </div>
-                <div className="col-5">
+                <div className="col-7">
                   <div className="row">
                     <div className="col">
                   <User/>
@@ -39,10 +39,12 @@ function App() {
                 <Provider store={store}>
                 <div className="App">
                   <Sidebar />
-                  <p></p>
                   <Favourites />
+
+                  <p></p>
                 </div>
                 </Provider>
+
                   </div>
                 </div>
                 </div>
