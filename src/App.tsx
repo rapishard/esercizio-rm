@@ -32,10 +32,14 @@ function App() {
                   <User/>
                 </div>
                 <div className="row">
+                  <p></p>
+                </div>
+                <div className="row">
                 <div className="col">
                 <Provider store={store}>
                 <div className="App">
                   <Sidebar />
+                  <p></p>
                   <Favourites />
                 </div>
                 </Provider>
