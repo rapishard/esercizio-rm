@@ -10,8 +10,6 @@ import { useBetween } from 'use-between';
 function Characters() {
   const [characters, setCharacter]= useState<Character[] | null>(null);
   const [favorites, setFavorites]= useState<Character[]>([]);
-  // const [deletedCharacter, setDeletedCharacter]= useState<number | null>(null);
-
   let [isFull, setIsFull]=  useState<boolean>(false)
 
   const deleteItem=(id: number)=>{
@@ -39,12 +37,6 @@ function Characters() {
         setCharacter(results)
         setIsFull(true)
   }
-
-  // useEffect(() => {
-  //   characters && setCharacter(characters.filter(({id: idCharacter}) =>idCharacter !== deletedCharacter ));
-
-  // }, [deletedCharacter])
-
     React.useEffect( ()=>{
     setTimeout(()=>{
       getData()
@@ -68,10 +60,9 @@ function Characters() {
               )}
             </div>
           </div>:
-          // characters && characters.map((character)=><div key={character.id} onClick={() => deleteCharacter(character.id)}>< CardImg   key={character.id} props= {character} /></div>) 
             <div>
               {
-                  <h1 className='center'>All</h1>
+                  <h3 className='center'>All</h3>
                 }
               <div className='loadflex'>
                 {
@@ -79,7 +70,7 @@ function Characters() {
                 }
               </div>
               {
-                  <h1 className='center'>Favorites</h1>
+                  <h3 className='center'>Favorites</h3>
                 }
               <div className='loadflex'>
                 {

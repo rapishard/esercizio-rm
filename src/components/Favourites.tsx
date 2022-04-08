@@ -1,4 +1,5 @@
 import React, { FC, useEffect, useState } from 'react'
+import { CardImg } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux'
 import { add, remove } from '../store/favourites/favourites.actions';
 import { selectFavourites } from '../store/favourites/favourites.selector'
@@ -28,7 +29,7 @@ const Favourites: FC = () => {
 
   return (
     <>
-    <ul>
+  <ul>
       {characters.map((character, index) => 
       <li key={index}>
         {character.name}
@@ -39,7 +40,8 @@ const Favourites: FC = () => {
             <button onClick={() => dispatch(add(character.id))}>Aggiungi</button>
         }
       </li>)}
-    </ul>
+    </ul> 
+
     </>
   )
 }

@@ -28,25 +28,11 @@ return 30-length;
 
 
 
-
-// const Card=({props}: {props: People})=>{
-// return (
-//     <>
-//         <div className="singleImg">
-//             <img className="imgCard" src={props.imgUrl} alt="img" />
-//             <div>
-//                 <h4 style={{color:"red", fontSize:generateFontSizeByNameSurname(props.name,props.surname )}}>  {props.name} {props.surname}</h4>
-//                 <h5>{props.desk}</h5>
-//             </div>
-//         </div>
-    
-//     </>
-// )
-// }
-// Dispatch<SetStateAction<number | null>>
 const useStyles = makeStyles({
     root: {
-      maxWidth: 345,
+      maxWidth: 50,
+      maxHeight: 50,
+
     },
   });
   
@@ -65,12 +51,13 @@ const CardImg: FC<CardImgProps> = ({character, deleteOnClick, addOnClick})=> {
             alt="Contemplative Reptile"
             image={character.image}
             title="Contemplative Reptile"
+            
           />
           <CardContent>
-            <Typography gutterBottom variant="h4" component="h2">
+            <Typography gutterBottom variant="h6" component="h4">
             {character.name}
             </Typography>
-            <Typography variant="h5" color="textSecondary" component="p">
+            <Typography variant="h6" color="textSecondary" component="p">
             {character.type}
             </Typography>
           </CardContent>
