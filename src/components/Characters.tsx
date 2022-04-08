@@ -61,21 +61,28 @@ function Characters() {
             </div>
           </div>:
             <div>
-              {
+              <div className="row">
+                <div className="col-5">{
                   <h3 className='center'>All</h3>
                 }
+                <div className="col">
               <div className='loadflex'>
                 {
                   characters && characters.map((character)=>< CardImg   key={character.id} character= {character} addOnClick={addToFavorites} deleteOnClick={deleteItem}/>) 
-                }
-              </div>
-              {
+                }</div>
+                
+              </div></div>
+                <div className="col-5">{
                   <h3 className='center'>Favorites</h3>
                 }
+                <div className="col"></div>
               <div className='loadflex'>
                 {
                   favorites && favorites.map((favorite, index)=>< CardImg   key={index} character= {favorite} addOnClick={addToFavorites} deleteOnClick={deleteItem} />) 
-                }
+                }</div>
+              </div>
+              
+              
               </div>
             </div>
         }
